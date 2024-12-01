@@ -1,0 +1,100 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp5309534.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+    background-repeat: no-repeat; /* Avoid repeating the background */
+}
+
+/* Container for the bookings page */
+.bookings-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.9); /* Light background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styling */
+.bookings-container h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Styling individual booking entries */
+.booking-entry {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Booking entry text */
+.booking-entry p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* No bookings message */
+.no-bookings {
+    color: #888;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Styling for the return home section */
+.return-home {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Button styling */
+.return-btn {
+    background-color: rgb(52, 115, 183);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cancel-btn {
+    background-color: rgb(183, 61, 52);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Button hover effect */
+.return-btn:hover {
+    background-color: #3c62ca;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .bookings-container {
+        padding: 15px;
+    }
+    .booking-entry p {
+        font-size: 1em;
+    }
+}

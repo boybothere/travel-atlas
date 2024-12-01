@@ -1,0 +1,187 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('https://i.pinimg.com/originals/3a/73/80/3a73804046a74b62f5b1bd032b2be0f7.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: #2c3e50;
+}
+
+/* Profile Card */
+body > * {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a2a6c;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #fdbb2d;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #b21f1f;
+    margin: 1.5rem 0;
+}
+
+/* Profile Details */
+p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(253, 187, 45, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #fdbb2d;
+}
+
+p:nth-child(even) {
+    background: rgba(178, 31, 31, 0.1);
+    border-left-color: #b21f1f;
+}
+
+/* Label styling for profile details */
+p::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #1a2a6c;
+    margin-right: 0.5rem;
+}
+
+/* Button Container */
+form {
+    margin: 1rem 0;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.5rem 0;
+}
+
+/* Update Details Button */
+form:nth-of-type(1) button {
+    background: linear-gradient(135deg, #1a2a6c, #4a69bd);
+    color: white;
+}
+
+form:nth-of-type(1) button:hover {
+    background: linear-gradient(135deg, #4a69bd, #1a2a6c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 42, 108, 0.3);
+}
+
+/* Delete Account Button */
+form:nth-of-type(2) button {
+    background: linear-gradient(135deg, #b21f1f, #e74c3c);
+    color: white;
+}
+
+form:nth-of-type(2) button:hover {
+    background: linear-gradient(135deg, #e74c3c, #b21f1f);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(178, 31, 31, 0.3);
+}
+
+/* Go to Home Button */
+form:nth-of-type(3) button {
+    background: linear-gradient(135deg, #fdbb2d, #f7b731);
+    color: #1a2a6c;
+}
+
+form:nth-of-type(3) button:hover {
+    background: linear-gradient(135deg, #f7b731, #fdbb2d);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(253, 187, 45, 0.3);
+}
+
+/* Logout Button */
+form:nth-of-type(4) button {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+}
+
+form:nth-of-type(4) button:hover {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+}
+
+/* Active button state */
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    body > * {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(26, 42, 108, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(26, 42, 108, 0.8);
+}

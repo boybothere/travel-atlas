@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('https://tse3.mm.bing.net/th?id=OIP.YmShIQAYiSEIabRlTjBNnAHaFj&pid=Api&P=0&h=180');
+    height: 100vh;
+    padding: 20px;
+}
+
+.booking-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.booking-summary {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.booking-summary p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+.proceed-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-btn:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
